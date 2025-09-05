@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sword Art Online — Página de Fã</title>
+    <meta name="description" content="Página de fã de Sword Art Online: personagens, arcos, galeria e links." />
+
+    <!-- Fonte futurista -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="fixed top-0 inset-x-0 z-50">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="mt-4 flex items-center justify-between rounded-2xl bg-white/5 backdrop-blur p-2 border border-white/10">
+          <a href="#top" class="flex items-center gap-2">
+            <span class="font-[800] tracking-wide" style="font-family: Orbitron, sans-serif">SAO.Fan</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a class="hover:text-[var(--accent)]" href="#sobre">Sobre</a>
+            <a class="hover:text-[var(--accent)]" href="#personagens">Personagens</a>
+            <a class="hover:text-[var(--accent)]" href="#arcos">Arcos</a>
+            <a class="hover:text-[var(--accent)]" href="#galeria">Galeria</a>
+            <a class="hover:text-[var(--accent)]" href="#links">Links</a>
+          </nav>
+          <button id="menuBtn" class="md:hidden rounded-xl px-3 py-2 bg-white/10">Menu</button>
+        </div>
+      </div>
+      <!-- menu mobile -->
+      <div id="mobileMenu" class="hidden md:hidden mt-2 mx-auto max-w-7xl px-4">
+        <div class="rounded-2xl bg-white/5 backdrop-blur border border-white/10 p-4">
+          <a class="block py-2" href="#sobre">Sobre</a>
+          <a class="block py-2" href="#personagens">Personagens</a>
+          <a class="block py-2" href="#arcos">Arcos</a>
+          <a class="block py-2" href="#galeria">Galeria</a>
+          <a class="block py-2" href="#links">Links</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="top" class="pt-36 pb-20 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight neon" style="font-family: Orbitron, sans-serif">
+        Sword Art Online
+      </h1>
+      <p class="mt-4 text-lg text-white/80 max-w-prose mx-auto">
+        Página de fã com informações de personagens, arcos e galeria.
+      </p>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-16 border-t border-white/10">
+      <div class="mx-auto max-w-4xl px-4">
+        <h2 class="text-3xl font-bold mb-4">Sobre</h2>
+        <p class="text-white/80">
+          Este site é um projeto de fã inspirado em Sword Art Online, com design futurista e responsivo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Personagens -->
+    <section id="personagens" class="py-16 border-t border-white/10">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-3xl font-bold mb-8">Personagens</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-5 rounded-2xl">
+            <h3 class="font-semibold">Kirito</h3>
+            <p class="text-white/70">O espadachim negro, protagonista da série.</p>
+          </div>
+          <div class="card p-5 rounded-2xl">
+            <h3 class="font-semibold">Asuna</h3>
+            <p class="text-white/70">A parceira de Kirito, veloz e determinada.</p>
+          </div>
+          <div class="card p-5 rounded-2xl">
+            <h3 class="font-semibold">Sinon</h3>
+            <p class="text-white/70">Atiradora de elite em Gun Gale Online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="py-10 border-t border-white/10 text-center text-white/60">
+      <p>Feito por um fã de SAO</p>
+    </footer>
+
+    <script>
+      // menu mobile
+      const btn=document.getElementById('menuBtn');
+      const m=document.getElementById('mobileMenu');
+      btn?.addEventListener('click',()=>m.classList.toggle('hidden'))
+    </script>
+  </body>
+</html>
