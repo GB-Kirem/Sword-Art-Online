@@ -1,0 +1,28 @@
+:root {
+  --bg: #0b1020;        /* azul bem escuro */
+  --bg2: #0f1530;
+  --primary: #00d9ff;   /* ciano neon */
+  --accent: #6cf9cf;    /* verde-água */
+  --text: #e6f7ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg), var(--bg2));
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.neon {
+  text-shadow: 0 0 8px rgba(0,217,255,.7),
+               0 0 20px rgba(0,217,255,.5);
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(6px);
+}
